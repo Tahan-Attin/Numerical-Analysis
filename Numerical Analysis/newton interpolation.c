@@ -31,7 +31,7 @@ void inter(int n,float k)
     float p,z;
     p=(k-x[0])/2.0;
     z=y[0][0]+p*y[0][1]+p*(p-1.0)/2.0*y[0][2]+p*(p-1.0)*(p-2.0)/6*y[0][3];
-    prinf("\n");
+    printf("\n");
     printf("the valu is = %f",z);
 }
 int main()
