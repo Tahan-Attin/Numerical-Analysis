@@ -11,7 +11,6 @@ void inter(int n,float k)
         printf("y[%d]= ", i);
         scanf("%f",&y[i][0]);
     }
-
     for(int i=1;i<n;i++)
     {
         for(int j=0;j<n-i;j++)
@@ -19,7 +18,6 @@ void inter(int n,float k)
             y[j][i]=y[j+1][i-1]-y[j][i-1];
         }
     }
-
     printf("\nFORWARD DIFFERENCE TABLE\n\n");
     for(int i=0;i<n;i++)
     {
@@ -30,13 +28,11 @@ void inter(int n,float k)
         }
         printf("\n");
     }
-
     double h=x[1]-x[0];
     double z;
     z=(1.0/h)*(y[1][1]-(1.0/2.0)*y[1][2]+(1.0/3.0)*y[1][3]-(1.0/4.0)*y[1][4]+(1.0/5.0)*y[1][5]);
     printf("%lf",z);
 }
-
 int main()
 {
     int n;
